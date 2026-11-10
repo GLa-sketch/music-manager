@@ -1,0 +1,17 @@
+# 核心依赖 - 随项目阶段逐步安装，不要一次全装
+# 每个阶段需要时再取消注释并 pip install
+
+# Phase 2: 数据存储
+SQLAlchemy>=2.0
+
+# Phase 3: 音乐元数据
+mutagen>=1.47
+
+# Phase 4: CLI
+typer[all]>=0.9
+
+# Phase 5: GUI
+PyQt6>=6.6
+
+# Phase 6: AI 增强
+librosa>=0.10
