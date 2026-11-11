@@ -7,13 +7,13 @@
 目标：跑通骨架，建立 Git 工作流。
 
 - [x] 项目骨架搭建（由助手完成）
-- [ ] 确认 Python 3.11+ 已安装
-- [ ] 在项目目录创建 venv 虚拟环境
-- [ ] 安装开发依赖 `pip install -r requirements-dev.txt`
-- [ ] 跑通 `python main.py`
-- [ ] 跑通 `pytest`（冒烟测试通过）
-- [ ] `git init` + 首次提交
-- [ ] 在 GitHub 建仓库并推送
+- [x] 确认 Python 3.11+ 已安装
+- [x] 在项目目录创建 venv 虚拟环境
+- [x] 安装开发依赖 `pip install -r requirements-dev.txt`
+- [x] 跑通 `python main.py`
+- [x] 跑通 `pytest`（冒烟测试通过）
+- [x] `git init` + 首次提交
+- [x] 在 GitHub 建仓库并推送
 
 ## Phase 2 · 数据模型与存储 (Week 2-3)
 
