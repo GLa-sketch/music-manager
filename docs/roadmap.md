@@ -19,12 +19,12 @@
 
 目标：能用 SQLite 存取歌曲数据。
 
-- [ ] 安装 SQLAlchemy，写入 requirements.txt
-- [ ] 实现 `database.py`：engine / Session / init_db
-- [ ] 实现 `models.py`：Song / Artist / Album / Playlist 模型
-- [ ] 编写 `init_db()` 建表脚本
-- [ ] 封装 CRUD 操作（增删改查）
-- [ ] 单元测试：模型创建、查询
+- [x] 安装 SQLAlchemy，写入 requirements.txt
+- [x] 实现 `database.py`：engine / Session / init_db
+- [x] 实现 `models.py`：Song / Artist / Album / Playlist 模型
+- [x] 编写 `init_db()` 建表脚本
+- [x] 封装 CRUD 操作（增删改查）
+- [x] 单元测试：模型创建、查询
 
 ## Phase 3 · 音乐文件处理 (Week 4)
 
