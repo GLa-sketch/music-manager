@@ -19,13 +19,16 @@
     session.close()
 """
 from music_manager.models import Artist, Album, Song, Playlist
+from sqlalchemy.orm import joinedload
 
 
 # ========== 查询（Read）==========
 
 def list_songs(session):
-    """列出所有歌曲。"""
-    return session.query(Song).all()
+    """列出所有歌曲。预加载艺术家和专辑，避免 session 关闭后访问报错。"""
+    return session.query(Song).options(
+        joinedload(Song.artist), joinedload(Song.album)
+    ).all()
 
 
 def list_artists(session):
@@ -45,7 +48,9 @@ def get_song(session, song_id):
 
 def search_songs(session, keyword):
     """按标题搜索歌曲（模糊匹配）。类似 SQL 的 LIKE '%keyword%'。"""
-    return session.query(Song).filter(Song.title.contains(keyword)).all()
+    return session.query(Song).options(
+        joinedload(Song.artist), joinedload(Song.album)
+    ).filter(Song.title.contains(keyword)).all()
 
 
 def get_artist_songs(session, artist_id):

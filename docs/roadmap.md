@@ -30,20 +30,20 @@
 
 目标：扫描本地音乐文件夹，自动入库。
 
-- [ ] 安装 mutagen
-- [ ] 实现 `read_metadata()`：读取单文件元数据
-- [ ] 实现 `scan_directory()`：递归扫描
-- [ ] 处理中文标签编码问题
-- [ ] 写入数据库（与 Phase 2 衔接）
-- [ ] 单元测试：用样本文件测试
+- [x] 安装 mutagen
+- [x] 实现 `read_metadata()`：读取单文件元数据
+- [x] 实现 `scan_directory()`：递归扫描
+- [x] 处理中文标签编码问题
+- [x] 写入数据库（与 Phase 2 衔接）
+- [x] 单元测试：用样本文件测试
 
 ## Phase 4 · CLI 命令行界面 (Week 5)
 
 目标：命令行完成所有操作。
 
-- [ ] 安装 typer
-- [ ] 实现 add / list / search 命令
-- [ ] 实现歌单管理命令
+- [x] 安装 typer
+- [x] 实现 list / search / scan / stats 命令
+- [x] 实现歌单管理命令
 - [ ] 美化输出（rich 表格）
 - [ ] 单元测试：命令调用
 
